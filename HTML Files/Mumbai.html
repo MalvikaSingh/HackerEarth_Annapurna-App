@@ -1,0 +1,62 @@
+<html>
+                <h1 align="center">Something more to your diet..</h1>
+                <h2 align="center">Click on the image to get some delicious recipes!</h2>
+<br>
+
+<!-- Case 2) image height is bigger than text height -->
+<div>
+        <a href="https://www.google.co.in/search?q=how+to+cook+rice+in+cooker+in+hindi&rlz=1C1OKWM_enIN782IN782&oq=how+to+cook+rice+in+cooker+hindi&aqs=chrome.1.69i57j0l4.14989j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=1">        
+                <img class="img-valign" src="images/paddy.jpg" alt="" id="yourImgId" />
+        </a>
+        <span class="text2">Carbohydrates: Rice</span>
+        <a href="https://www.youtube.com/watch?v=McRowTybQOc">        
+                <img class="img-valign" src="images/gram.jpg" alt="" id="yourImgId"/>
+        </a>
+        <span class="text2">Protein: Red Gram</span>
+        <a href="https://www.youtube.com/watch?v=EiDN97tPNP8">
+                <img class="img-valign" src="images/potato.jpg" alt="" id="yourImgId"/>
+        </a>
+        <span class="text2">Good Fats: Potato</span>
+        <br/><br/><br/><br><br><br><br>
+        <a href="https://www.google.co.in/search?rlz=1C1OKWM_enIN782IN782&ei=bBOgWqHRA8T8vAT3-bjYAg&q=brinjal+bharta+recipe+sanjeev+kapoor&oq=brinjal+bharta+recipe+sanjeev+kapoor&gs_l=psy-ab.3..0i22i30k1l5.2028.5598.0.5782.15.15.0.0.0.0.310.2033.0j6j3j1.10.0....0...1c.1.64.psy-ab..5.10.2017...0.0.LGm8-TnAAqo#kpvalbx=1">
+                <img class="img-valign" src="images/eggplant.jpg" alt="" id="yourImgId"/>
+        </a>
+        <span class="text2">Vitamin source: B1 and B6</span>
+        <a href="https://www.youtube.com/watch?v=5u9tz785gKQ">
+                <img class="img-valign" src="images/sapota.jpg" alt="" id="yourImgId"/>
+        </a>
+        <span class="text2">Mineral Source: Potassium</span>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+</div>
+<script>
+        var yourImg = document.getElementById('yourImgId');
+        if (yourImg && yourImg.style) {
+                yourImg.style.height = '200px';
+                yourImg.style.width = '200px';
+        }
+</script>
+<style>
+        /* 
+ * http://stackoverflow.com/questions/489340/how-do-i-vertically-align-text-next-to-an-image-with-css
+ * Use margin-bottom
+*/
+
+        .img-valign {
+                vertical-align: middle;
+                margin-bottom: 0.75em;
+        }
+
+        .text1 {
+                font-size: 44px;
+        }
+
+        .text2 {
+                font-size: 24px;
+        }
+</style>
+
+</html>

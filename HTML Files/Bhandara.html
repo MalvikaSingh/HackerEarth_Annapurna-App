@@ -1,0 +1,55 @@
+<html>
+
+<br/><br/><br/><br><br><br><br>
+<!-- Case 2) image height is bigger than text height -->
+<div>
+        <a href="https://www.youtube.com/watch?v=y-v5zfaxCjQ">        
+                <img class="img-valign" src="images/wheat.jpg" alt="" id="yourImgId1" />
+        </a>
+        <span class="text2">Carbohydrates: Wheat</span>
+        <a href="https://www.youtube.com/watch?v=bYtEPY2A01w">        
+                <img class="img-valign" src="images/Pea.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Protein: Pigeon Pea</span>
+        <a href="https://www.youtube.com/watch?v=4b4CmTtbdec">
+                <img class="img-valign" src="images/ghee.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Fats: Ghee</span>
+        <br/><br/><br/><br><br><br><br>
+        <a href="https://www.youtube.com/watch?v=YdLd2LpjzdA">
+                <img class="img-valign" src="images/ginger.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Vitamin B6 source: Ginger</span>
+        <a href="https://www.youtube.com/watch?v=2u8loSpKtko">
+                <img class="img-valign" src="images/cane.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Mineral Source: Magnesium,calcium in Sugarcane</span>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+</div>
+<script>
+        var yourImg = document.getElementById('yourImgId1');
+        if (yourImg && yourImg.style) {
+                yourImg.style.height = '200px';
+                yourImg.style.width = '200px';
+        }
+</script>
+<style>
+       .img-valign {
+                vertical-align: middle;
+                margin-bottom: 0.75em;
+        }
+
+        .text1 {
+                font-size: 44px;
+        }
+
+        .text2 {
+                font-size: 24px;
+        }
+</style>
+
+</html>

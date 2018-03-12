@@ -1,0 +1,193 @@
+<html>
+<div>
+<div id="show">
+    <h1>Any health issues</h1>
+    <input type="checkbox" id="c1" name="cc" />
+    <label for="c1"><span></span>Anaemia</label>
+    <p>
+    <input type="checkbox" id="c11" name="cc" />
+    <label for="c11"><span></span>Seasonal Flu</label>
+    <p>        
+    <input type="checkbox" id="c13" name="cc" />
+    <label for="c13"><span></span>Loose motion</label>
+    <p>
+    <input type="checkbox" id="c15" name="cc" />
+    <label for="c15"><span></span>Sun Stroke</label>
+    <p>
+    <input type="checkbox" id="c2" name="cc" />
+    <label for="c2"><span></span>Diabetes</label>
+    <p>
+    <input type="checkbox" id="c3" name="cc" />
+    <label for="c3"><span></span>None</label>
+    <p>       
+            <div class="row">
+                    <div class="column" style="background-color:teal;">
+                            <h1>Season</h1>
+                            <input type="radio" id="r1" name="rr" />
+                            <label for="r1"><span></span>Kharif or the winter</label>
+                            <p>
+                            <input type="radio" id="r2" name="rr" />
+                            <label for="r2"><span></span>Rabi or the rainy season</label>
+                            <p>
+                            <input type="radio" id="r3" name="rr" />
+                            <label for="r3"><span></span>Summers</label>
+                            
+                    </div>
+                    <div class="column" style="background-color:teal;">
+                            <h1>Diet Type</h1>
+                            <input type="radio" id="r11" name="rr1" />
+                            <label for="r11"><span></span>Vegetarian</label>
+                            <p>
+                            <input type="radio" id="r12" name="rr1" />
+                            <label for="r12"><span></span>Non vegetarian</label>
+                            <button class="button" onClick="check()">Submit</button>
+                    </div>
+                    <button class="button" onClick=document.location.href="physician.html">Contact Physician</button>
+                  </div>
+                   
+</div>
+<script src="check.js"></script>
+<style>
+    .button {
+          position: relative;
+          background-color:rgba(255, 0, 0, 0.623);
+          border: none;
+          font-size: 20px;
+          color: #FFFFFF;
+          padding: 20px;
+          width: 100px;
+          text-align: center;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          text-decoration: none;
+          overflow: hidden;
+          cursor: pointer;
+          margin-left: 250px
+      }
+      
+      .button:after {
+          content: "";
+          background: #f1f1f1;
+          display: block;
+          position: absolute;
+          padding-top: 300%;
+          padding-left: 350%;
+          margin-left: -20px !important;
+          margin-top: -120%;
+          opacity: 0;
+          transition: all 0.8s
+      }
+      
+      .button:active:after {
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          transition: 0s
+      }
+    * {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 130px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html {
+    height:100%;
+}
+
+body {
+    position:relative;
+    background:#f2f2f2;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+div#show {
+    width:580px;
+    height:400px;
+    padding:20px;
+    position:absolute;
+    left:48%;
+    margin-left:-120px;
+    top:54%;
+    margin-top:-160px;
+    background:teal;
+    border-radius:6px;
+}
+
+h1 {
+    font-size:14px;
+    color:#f2f2f2;
+    text-align:center;
+    margin:0 0 20px;
+    padding:0;
+    font-family:Arial;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    content:"";
+}
+
+input[type="checkbox"]:checked + label::before {
+    background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -19px top no-repeat;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="radio"] + label::before {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+    content:"";
+}
+
+input[type="radio"]:checked + label::before {
+    background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -57px top no-repeat;
+}
+body {
+                    background-image: url("images/bcg.jpg");
+                    background-repeat: no-repeat;
+     }
+</style>
+</html>

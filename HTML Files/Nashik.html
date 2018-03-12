@@ -1,0 +1,59 @@
+<html>
+                <h1 align="center">Something more to your diet..</h1>
+                <h2 align="center">Click on the image to get some delicious recipes!</h2>
+<br>
+<!-- Case 2) image height is bigger than text height -->
+<div>
+        <a href="https://www.youtube.com/watch?v=ACQMjEuS8H8">        
+                <img class="img-valign" src="images/maize.jpg" alt="" id="yourImgId1" />
+        </a>
+        <span class="text2">Carbohydrates: Maize</span>
+        <a href="https://www.youtube.com/watch?v=kBW0PZ01mBQ">        
+                <img class="img-valign" src="images/soyabean.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Protein: Soyabean</span>
+        <a href="https://www.youtube.com/watch?v=RPtH_f8VfrQ">
+                <img class="img-valign" src="images/buttermilk.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Fats: Lassi</span>
+        <br><br>
+        <a href="https://www.youtube.com/watch?v=AQk-YFhuDsQ">
+                <img class="img-valign" src="images/grape.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Vitamin source: C, Grapes</span>
+        <a href="https://www.youtube.com/watch?v=WxyFSkxT--Q">
+                <img class="img-valign" src="images/guava.jpg" alt="" id="yourImgId1"/>
+        </a>
+        <span class="text2">Mineral Source: Magnesium in guava</span>
+</div>
+<br/>
+<div>
+</div>
+<script>
+        var yourImg = document.getElementById('yourImgId1');
+        if (yourImg && yourImg.style) {
+                yourImg.style.height = '200px';
+                yourImg.style.width = '200px';
+        }
+</script>
+<style>
+        /* 
+ * http://stackoverflow.com/questions/489340/how-do-i-vertically-align-text-next-to-an-image-with-css
+ * Use margin-bottom
+*/
+
+        .img-valign {
+                vertical-align: middle;
+                margin-bottom: 0.75em;
+        }
+
+        .text1 {
+                font-size: 44px;
+        }
+
+        .text2 {
+                font-size: 24px;
+        }
+</style>
+
+</html>
